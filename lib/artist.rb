@@ -2,11 +2,11 @@ require 'pry'
 
 class Artist
   extend Memorable
-  
+
   attr_accessor :name
   attr_reader :songs
-
-  @@artists = []
+  # 
+  # @@artists = []
 
   def self.find_by_name(name)
     @@artists.detect{|a| a.name == name}
